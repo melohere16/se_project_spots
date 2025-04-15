@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  color: rgba(33, 33, 33, 0.7);
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+}

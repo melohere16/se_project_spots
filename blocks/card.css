@@ -1,13 +1,19 @@
-.card {
-  width: 413px;
-}
 .card__image {
   height: 445px;
-  width: 413px;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
-
+.card__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 120%;
+  font-size: 20px;
+  letter-spacing: 0;
+}
 .card__like-button {
   background-image: url(../images/Like\ Icon.png);
   border: none;
@@ -19,4 +25,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 627px) {
+  .card__image {
+    height: 413px;
+  }
 }
