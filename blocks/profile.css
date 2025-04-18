@@ -1,7 +1,8 @@
 .profile {
   display: flex;
-  padding: 34px 0 20px;
+  padding: 34px 40px 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+  overflow: hidden;
 }
 .profile__avatar {
   margin-right: 20px;
@@ -27,7 +28,6 @@
   line-height: 100%;
   display: flex;
   align-items: center;
-  padding: 18px 32px;
   cursor: pointer;
   overflow: hidden;
 }
