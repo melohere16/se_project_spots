@@ -6,5 +6,9 @@
   font-size: 16px;
   line-height: 100%;
   font-weight: 400;
-  margin: 40px 0;
+  padding: 60px 60px;
+}
+
+.footer__text {
+  margin: 0;
 }

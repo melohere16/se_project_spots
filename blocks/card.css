@@ -13,7 +13,8 @@
   line-height: 120%;
   font-size: 20px;
   color: rgba(33, 33, 33, 1);
-  max-width: 100%;
+  max-width: 353px;
+  margin: 12px 0 0 0;
 }
 .card__like-button {
   background-image: url(../images/Union.png);
@@ -25,6 +26,7 @@
 }
 .card__like-button:hover {
   opacity: 1;
+  cursor: pointer;
 }
 .card__content {
   display: flex;
