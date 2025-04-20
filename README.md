@@ -16,3 +16,6 @@ In this project, you can see the professional photos of a civil aviator named Be
 #Deployment Link:
 
 (https://melohere16.github.io/se_project_spots/)
+
+#Link to my step-by-step project description video:
+https://youtu.be/zDkZ2BVYPTk

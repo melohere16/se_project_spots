@@ -1,10 +1,11 @@
 .profile {
   display: flex;
-  padding: 34px 40px 20px;
+  padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
   overflow: hidden;
   max-width: 100%;
   margin: 0 auto;
+  max-width: 1280px;
 }
 .profile__avatar {
   margin-right: 20px;
@@ -29,9 +30,9 @@
   font-weight: 500;
   line-height: 100%;
   display: flex;
-  align-items: center;
   cursor: pointer;
   overflow: hidden;
+  padding: 0;
 }
 .profile__edit-btn:hover {
   opacity: 0.6;
@@ -112,10 +113,12 @@
   .profile__column {
     text-align: center;
     margin: 0;
+    align-items: center;
   }
   .profile__add-btn {
     margin-left: 0;
     max-width: 288px;
     width: 100%;
+    margin-top: 20px;
   }
 }
