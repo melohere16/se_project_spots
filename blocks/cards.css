@@ -12,6 +12,10 @@
   justify-content: center;
   gap: 40px 20px;
 }
+.cards__section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 627px) {
   .cards__list {
