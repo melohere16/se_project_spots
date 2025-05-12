@@ -23,6 +23,8 @@
   width: 23px;
   height: 20px;
   opacity: 0.4;
+  top: 425;
+  left: 390;
 }
 .card__like-button:hover {
   opacity: 1;
@@ -44,5 +46,6 @@
   .card__like-button {
     width: 20px;
     height: 18px;
+    opacity: 0.4;
   }
 }

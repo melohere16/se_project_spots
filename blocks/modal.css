@@ -10,10 +10,14 @@
   justify-content: center;
   align-items: center;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out, visibility 0ms linear 250ms;
 }
 
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out, visibility 0ms linear 0ms;
 }
 
 .modal__container {
