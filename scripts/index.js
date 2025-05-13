@@ -52,18 +52,6 @@ const cardLinkInput = addCardFormElement.querySelector("#card-image-input");
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  newPostModal.classList.remove(".modal-is-opened");
+  newPostModal.classList.remove("modal-is-opened");
 }
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
-
-const modal = document.querySelector(".modal");
-const profileOpenBtnn = document.querySelector(".modal__is-opened");
-const profileCloseBtn = document.querySelector(".modal__close-btn");
-
-profileOpenBtn.addEventListener("click", () => {
-  modal.classList.add("modal_is-opened");
-});
-
-profileCloseBtn.addEventListener("click", () => {
-  modal.classList.remove("modal_is-opened");
-});
