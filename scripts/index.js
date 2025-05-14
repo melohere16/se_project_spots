@@ -52,6 +52,6 @@ const cardLinkInput = addCardFormElement.querySelector("#card-image-input");
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  newPostModal.classList.remove("modal-is-opened");
+  newPostModal.classList.remove("modal_is-opened");
 }
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
