@@ -36,7 +36,7 @@
   height: 40px;
   top: 32px;
   right: 50px;
-  background-image: url(../images/Group-27.png);
+  background-image: url(../images/close.svg);
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -78,7 +78,7 @@
 }
 
 .modal__input:hover {
-  border-color: rgba(33, 33, 33, 0.7);
+  border-color: rgba(33, 33, 33, 1);
 }
 .modal__input::placeholder {
   color: #2121214d;
@@ -121,6 +121,7 @@
     padding-bottom: 18px;
     padding-left: 32px;
     gap: 8px;
+    width: 100%;
   }
   .modal__title {
     font-size: 20px;
