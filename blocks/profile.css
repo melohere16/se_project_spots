@@ -46,13 +46,14 @@
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   align-self: flex-end;
+  font-weight: 500;
 }
 
 .profile__add-btn:hover {
