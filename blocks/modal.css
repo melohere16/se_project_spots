@@ -72,14 +72,14 @@
 .modal__close-btn:hover {
   opacity: 1;
 }
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
   top: 0;
   right: -52px;
   background-image: url(../images/x-white.svg);
   width: 40px;
   height: 40px;
 }
-.modal__close_type_preview:hover {
+.modal__close-btn_type_preview:hover {
   opacity: 1;
 }
 
