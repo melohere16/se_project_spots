@@ -31,7 +31,7 @@
 }
 
 .modal__image {
-  max-width: 80vw;
+  max-width: 90vw;
   max-height: 80vh;
   width: 100%;
   display: block;
@@ -144,7 +144,7 @@
 }
 @media screen and (max-width: 730px) {
   .modal__container {
-    width: 300px;
+    width: 320px;
     padding: 12px;
   }
   .modal__input {
@@ -171,7 +171,7 @@
 }
 
 @media screen and (max-width: 627px) {
-  .modal__close_type_preview {
+  .modal__close-btn_type_preview {
     top: -48px;
     right: 0;
   }

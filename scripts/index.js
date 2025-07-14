@@ -120,7 +120,7 @@ function handleEditProfileSubmit(evt) {
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   console.log("submit");
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
@@ -139,7 +139,10 @@ function handleAddCardSubmit(evt) {
     link: cardLinkInput.value,
   };
   const cardElement = getCardElement(inputValues);
+  addCardFormElement.reset();
   cardsList.prepend(cardElement);
+
+  closeModal(newPostModal);
   newPostModal.classList.remove("modal_is-opened");
 }
 addCardFormElement.reset();
