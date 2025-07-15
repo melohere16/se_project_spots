@@ -144,8 +144,9 @@
 }
 @media screen and (max-width: 730px) {
   .modal__container {
-    width: 320px;
+    width: 100%;
     padding: 12px;
+    margin: 12px;
   }
   .modal__input {
     height: 48px;

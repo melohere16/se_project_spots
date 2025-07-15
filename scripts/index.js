@@ -143,9 +143,8 @@ function handleAddCardSubmit(evt) {
   cardsList.prepend(cardElement);
 
   closeModal(newPostModal);
-  newPostModal.classList.remove("modal_is-opened");
 }
-addCardFormElement.reset();
+
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach(function (item) {
