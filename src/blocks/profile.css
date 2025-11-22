@@ -12,6 +12,34 @@
   width: 190px;
   border-radius: 8px;
 }
+.profile__avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile__avatar-edit-btn {
+  position: absolute;
+  bottom: 8px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/Group-2.svg") center no-repeat;
+  background-size: 18px 18px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  color: white;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.profile__avatar-container:hover .profile__avatar-edit-btn {
+  opacity: 1;
+}
+
 .profile__column {
   display: flex;
   flex-direction: column;
@@ -58,6 +86,7 @@
 .profile__add-btn:hover {
   opacity: 0.6;
 }
+
 .profile__name {
   margin: 0 0 12px;
   font-weight: 500;

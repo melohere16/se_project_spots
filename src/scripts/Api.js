@@ -53,7 +53,7 @@ class Api {
   }
 
   changeLikeStatus(cardId, isLiked) {
-    return fetch(`${this._baseUrl}/cards/likes/${cardId}`, {
+    return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
       method: isLiked ? "PUT" : "DELETE",
       headers: this._headers,
     }).then(this._handleResponse);
@@ -67,7 +67,7 @@ class Api {
 export const api = new Api({
   baseUrl: "https://around-api.en.tripleten-services.com/v1",
   headers: {
-    authorization: "220e12dc-c627-4ecc-874d-49b284219d0c",
+    authorization: "b369dd3f-2c1f-43d8-b7e2-6e16125abba5",
     "Content-Type": "application/json",
   },
 });
