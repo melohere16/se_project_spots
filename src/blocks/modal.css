@@ -108,6 +108,15 @@
   opacity: 0.8;
 }
 
+/* ⭐ Disabled state: greyed out button */
+.modal__submit-btn_disabled {
+  background-color: #d3d3d3;
+  color: rgba(33, 33, 33, 0.4);
+  cursor: default;
+  opacity: 1;
+  pointer-events: none;
+}
+
 .modal__container_delete {
   max-width: 420px;
   width: 90%;
@@ -139,6 +148,7 @@
   background: transparent;
   top: -40px;
   right: -4px;
+  cursor: pointer;
 }
 
 .modal__close-btn_delete:hover {

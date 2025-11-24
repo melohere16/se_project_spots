@@ -63,11 +63,26 @@ function closeModal(modal) {
   document.removeEventListener("keydown", handleEscape);
 }
 
+// Close by clicking on overlay
 document.querySelectorAll(".modal").forEach((m) => {
   m.addEventListener("mousedown", (e) => {
     if (e.target.classList.contains("modal")) closeModal(m);
   });
 });
+
+// ⭐ Close buttons now close their modals
+document
+  .querySelectorAll(
+    ".modal__close-btn, .modal__close-btn_delete, .modal__close-btn_type_preview"
+  )
+  .forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const modal = btn.closest(".modal");
+      if (modal) {
+        closeModal(modal);
+      }
+    });
+  });
 
 function getCardElement(data) {
   const cardElement = cardTemplate.cloneNode(true);
@@ -95,9 +110,11 @@ function getCardElement(data) {
     api
       .changeLikeStatus(data._id, willLike)
       .then((updated) => {
-        updated.isLiked
-          ? likeBtn.classList.add(likeActiveClass)
-          : likeBtn.classList.remove(likeActiveClass);
+        if (updated.isLiked) {
+          likeBtn.classList.add(likeActiveClass);
+        } else {
+          likeBtn.classList.remove(likeActiveClass);
+        }
       })
       .catch(console.error);
   });
@@ -125,7 +142,6 @@ function getCardElement(data) {
         })
         .catch(console.error)
         .finally(() => {
-          // ⭐ restore text
           setButtonText(deleteButton, false, "", "Delete");
         });
     };
@@ -182,7 +198,9 @@ editProfileForm.addEventListener("submit", (e) => {
 newPostForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const btn = e.submitter;
-  setButtonText(btn, true, "Saving...", "Create");
+
+  // ⭐ Button text uses "Save" (matches UI)
+  setButtonText(btn, true, "Saving...", "Save");
 
   api
     .addCard({ name: cardCaptionInput.value, link: cardLinkInput.value })
@@ -193,7 +211,7 @@ newPostForm.addEventListener("submit", (e) => {
       closeModal(newPostModal);
     })
     .catch(console.error)
-    .finally(() => setButtonText(btn, false, "", "Create"));
+    .finally(() => setButtonText(btn, false, "", "Save"));
 });
 
 avatarForm.addEventListener("submit", (e) => {
