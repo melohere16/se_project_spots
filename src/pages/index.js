@@ -63,14 +63,14 @@ function closeModal(modal) {
   document.removeEventListener("keydown", handleEscape);
 }
 
-// Close by clicking on overlay
+
 document.querySelectorAll(".modal").forEach((m) => {
   m.addEventListener("mousedown", (e) => {
     if (e.target.classList.contains("modal")) closeModal(m);
   });
 });
 
-// ⭐ Close buttons now close their modals
+
 document
   .querySelectorAll(
     ".modal__close-btn, .modal__close-btn_delete, .modal__close-btn_type_preview"
@@ -199,7 +199,7 @@ newPostForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const btn = e.submitter;
 
-  // ⭐ Button text uses "Save" (matches UI)
+
   setButtonText(btn, true, "Saving...", "Save");
 
   api
