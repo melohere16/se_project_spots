@@ -2,7 +2,7 @@
 
 ## Description
 
-In this project, you can see the professional photos of a civil aviator named Bessie Coleman with explanations below.
+In this project, you can see the professional photos of a civil aviator named Bessie Coleman with explanations below. This project focuses on building a clean, responsive, and elegant layout using fundamental front-end technologies.
 
 ## Tech Stack
 
@@ -19,3 +19,6 @@ In this project, you can see the professional photos of a civil aviator named Be
 
 #Link to my step-by-step project description video:
 https://youtu.be/zDkZ2BVYPTk
+
+#Link to my project pitch video:
+https://www.loom.com/share/11fd97caa3f54b1d8f5664b59a265e3f
