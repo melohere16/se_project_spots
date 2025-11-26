@@ -65,6 +65,7 @@
         <p class="footer__text">2025 © Spots</p>
       </footer>
 
+      <!-- ============ EDIT PROFILE MODAL ============ -->
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
@@ -131,6 +132,7 @@
                 id="image-caption-input"
                 type="text"
                 class="modal__input"
+                placeholder="Place image caption"
                 minlength="2"
                 maxlength="30"
                 required
@@ -143,6 +145,7 @@
         </div>
       </div>
 
+      <!-- ============ EDIT AVATAR MODAL ============ -->
       <div class="modal" id="edit-avatar-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
@@ -193,12 +196,14 @@
 
       <div class="modal modal_type_preview" id="preview-modal">
         <div class="modal__image-container">
+          <img src="#" alt="" class="modal__image" />
+
           <button
             type="button"
-            class="modal__close-btn modal__close-btn_type_preview"
+            class="modal__close-btn_type_preview"
+            aria-label="Close"
           ></button>
 
-          <img src="#" alt="" class="modal__image" />
           <p class="modal__caption"></p>
         </div>
       </div>
